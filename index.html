@@ -18,13 +18,13 @@
                 <legend>Persönliche Daten</legend>
 
                 <label for="Ttext">Titel</label>
-                <input type="text" name="Ttext" id="Ttext" value="Dr. hc"><br>
+                <input type="text" name="Ttext" id="Ttext" value="Dr. hc" required><br>
 
                 <label for="name">Vorname</label>
-                <input type="text" name="name" id="name" value="Peter"><br>
+                <input type="text" name="name" id="name" value="Peter" required><br>
 
                 <label for="surname">Nachname</label>
-                <input type="text" name="surname" id="surname" value="Muster">
+                <input type="text" name="surname" id="surname" value="Muster" required>
 
                 <div>
                     <span>Geschlecht</span>
@@ -34,7 +34,7 @@
                     <input type="radio" name="f-m" id="male" checked>
                 </div>
 
-                <label for="f-m2">Geschlecht</label>
+                <label for="female2">Geschlecht</label>
                 <label for="female2">W</label>
                 <input type="radio" name="f-m2" id="female2" checked>
                 <label for="male2">M</label>
@@ -53,7 +53,7 @@
             <fieldset>
                 <legend>Kontaktdaten</legend>
                 <label for="telefon">Telefon</label>
-                <input type="tel" name="telefon" id="telefon"><br>
+                <input type="tel" name="telefon" id="telefon" required><br>
                 
                 <label for="mobile">Mobile</label>
                 <input type="tel" name="mobile" id="mobile" placeholder="optional"><br>
@@ -65,7 +65,7 @@
                 <input type="tel" name="fax" id="fax" placeholder="optional"><br>
                 
                 <label for="mail-1">Mail 1</label>
-                <input type="email" name="mail-1" id="mail-1"><br>
+                <input type="email" name="mail-1" id="mail-1" required><br>
                 
                 <label for="mail-2">Mail 2</label>
                 <input type="email" name="mail-2" id="mail-2" placeholder="optional">
@@ -74,7 +74,7 @@
             <fieldset>
                 <legend>Adressdaten</legend>
                 <label for="firma">Firma</label>
-                <input type="text" name="firma" id="firma"><br>
+                <input type="text" name="firma" id="firma" required><br>
                 
                 <label for="zusatz-firma">Zusatz Firma</label>
                 <input type="text" name="zusatz-firma" id="zusatz-firma" placeholder="optional"><br>
@@ -83,8 +83,8 @@
                 <input type="url" name="home-page" id="home-page" placeholder="optional"><br>
                 
                 <label for="address">Adress / Haus Nr</label>
-                <input type="text" name="address" id="address" value="Musterstrasse">
-                <input type="number" value="33"><br>
+                <input type="text" name="address" id="address" value="Musterstrasse" required>
+                <input type="number" value="33" required><br>
                 
                 <label for="zusatz-address">Zusatz Adress</label>
                 <input type="text" name="zusatz-address" id="zusatz-address" placeholder="optional"><br>
@@ -93,15 +93,13 @@
                 <input type="text" name="postbox" id="postbox" placeholder="optional"><br>
 
                 <label for="ort">PLZ / Ort</label>
-                <input type="number" name="ort" id="ort" value="8800">
-                <input type="text"  value="Musterstadt"><br>
+                <input type="number" name="ort" id="ort" value="8800" required>
+                <input type="text"  value="Musterstadt" required><br>
 
                 <label for="kanton">Kanton / Land</label>
-                <input type="text" name="kanton" id="kanton" value="ZH">
-                <input type="text" value="Musterstadt">
+                <input type="text" name="kanton" id="kanton" value="ZH" required>
+                <input type="text" value="Musterstadt" required>
             </fieldset>
-
-            <!-- <button type="Submit">Speichern</button> -->
             <input type="submit" value="Speichern">
         </form>
     </body>
