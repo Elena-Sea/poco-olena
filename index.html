@@ -24,16 +24,21 @@
                 <input type="text" name="name" id="name" value="Peter"><br>
 
                 <label for="surname">Nachname</label>
-                <input type="text" name="surname" id="surname" value="Muster"><br>
+                <input type="text" name="surname" id="surname" value="Muster">
 
                 <div>
                     <span>Geschlecht</span>
                     <label for="female">W</label>
                     <input type="radio" name="f-m" id="female">
                     <label for="male">M</label>
-                    <input type="radio" name="f-m" id="male" checked><br>
+                    <input type="radio" name="f-m" id="male" checked>
                 </div>
 
+                <label for="f-m2">Geschlecht</label>
+                <label for="female2">W</label>
+                <input type="radio" name="f-m2" id="female2" checked>
+                <label for="male2">M</label>
+                <input type="radio" name="f-m2" id="male2" >
                 <div>
                     <span>Sprache</span>
                     <label for="sprache-de">DE</label>
@@ -41,9 +46,10 @@
                     <label for="sprache-fr">FR</label>
                     <input type="radio" name="sprache" id="sprache-fr">
                     <label for="sprache-it">IT</label>
-                    <input type="radio" name="sprache" id="sprache-it"><br>
+                    <input type="radio" name="sprache" id="sprache-it">
                 </div>
             </fieldset>
+
             <fieldset>
                 <legend>Kontaktdaten</legend>
                 <label for="telefon">Telefon</label>
@@ -62,8 +68,9 @@
                 <input type="email" name="mail-1" id="mail-1"><br>
                 
                 <label for="mail-2">Mail 2</label>
-                <input type="email" name="mail-2" id="mail-2" placeholder="optional"><br>
+                <input type="email" name="mail-2" id="mail-2" placeholder="optional">
             </fieldset>
+
             <fieldset>
                 <legend>Adressdaten</legend>
                 <label for="firma">Firma</label>
@@ -91,12 +98,11 @@
 
                 <label for="kanton">Kanton / Land</label>
                 <input type="text" name="kanton" id="kanton" value="ZH">
-                <input type="text" value="Musterstadt"><br>
-                
+                <input type="text" value="Musterstadt">
             </fieldset>
 
-            <button type="Submit">Speichern</button>
-            <!-- <input type="submit">Speichern<br> -->
+            <!-- <button type="Submit">Speichern</button> -->
+            <input type="submit" value="Speichern">
         </form>
     </body>
 
