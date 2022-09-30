@@ -1,0 +1,37 @@
+html {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+p {
+    font-family: Lato, sans-serif;
+}
+
+.em {
+    font-size: 50%;
+}
+
+.rem {
+    font-size: 2rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+
+    /* justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    border: 1px solid green; */
+}
+section {
+    border: 1px solid tomato;
+    width: 100px;
+}
+
+

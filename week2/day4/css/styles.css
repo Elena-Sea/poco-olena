@@ -1,0 +1,16 @@
+html {
+    font-size: 20px;
+}
+
+p {
+    font-family: Lato, sans-serif;
+}
+
+.em {
+    font-size: 50%;
+}
+
+.rem {
+    font-size: 2rem;
+}
+
