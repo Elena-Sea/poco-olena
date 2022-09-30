@@ -4,7 +4,8 @@ html {
     padding: 0;
 }
 body, 
-h2 {
+h2,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -43,4 +44,67 @@ h2 {
     color: rgb(240, 248, 255, 0.5);
 }
 
+/* .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+} */
+
+
+/* code for flex and grid files */
+
+.header-responsive {
+    background-color: beige;
+    height: 100px;
+    padding: 10px 10px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+input {
+    height: 30px; 
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.input {
+    flex-grow: 2;
+    margin-right: 15px;
+
+}
+.icon-list {
+    display: flex;
+  
+
+    /* margin-left: auto; */
+    list-style: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid rgb(118, 118, 118);
+    border-radius: 50%;
+}
+
+.icon:not(:last-child) {
+    margin-right: 15px;
+}
