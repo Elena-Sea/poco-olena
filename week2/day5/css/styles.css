@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Lato, sans-serif;
 }
+
 body, 
 h2,
 ul {
@@ -40,34 +42,10 @@ ul {
     background-color: rgb(216, 112, 147, 0.5);
 }
 
-h2 {
-    color: rgb(240, 248, 255, 0.5);
-}
-
-/* .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-} */
-
-
 /* code for flex and grid files */
 
-.header-responsive {
-    background-color: beige;
+.nav-responsive {
+    color: rgb(240, 248, 255, 0.5);    
     height: 100px;
     padding: 10px 10px;
 }
@@ -91,9 +69,6 @@ input {
 }
 .icon-list {
     display: flex;
-  
-
-    /* margin-left: auto; */
     list-style: none;
 }
 
@@ -107,4 +82,65 @@ input {
 
 .icon:not(:last-child) {
     margin-right: 15px;
+}
+
+.dark-blue {
+    height: 50px;
+    background-color: rgb(18, 154, 251);
+}
+
+.light-blue {
+    height: 200px;
+    background-color: rgb(141, 210, 247);
+    text-align: center;
+    padding-top: 80px;
+    color: gray;
+    font-size: 20px;
+}
+
+.content {
+    height: 300px;
+    background-color: rgb(240, 248, 255);
+    text-align: center;
+    padding-top: 130px;
+    color: gray;
+    font-size: 20px;
+}
+
+.sign-features {
+    color: gray;
+    font-size: 20px;
+}
+
+.sign-up {
+    height: 100px;
+    background-color: rgb(206, 233, 247);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.feature {
+    height: 100px;
+    background-color: rgb(240, 248, 255);
+    text-align: center;
+    padding-top: 40px;
+    color: gray;
+    font-size: 20px;
+}
+.yellow {
+    background-color: orange;
+}
+
+@media screen and (max-width: 900px) {
+    .yellow {
+            background-color: yellow;
+        }
+}
+
+.red {
+    background-color: orangered;
+}
+
+.purple {
+    background-color: plum;
 }
