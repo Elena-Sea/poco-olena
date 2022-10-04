@@ -103,9 +103,80 @@ header,
 
 .body-layout {
     background-color: #DFDFDE;
-    padding: 50px;
+    padding: 50px 30px;
+    text-align: center;
 }
 
 .main-layout {
+    padding: 50px 20px;
+
     background-color: #ffffff;
+}
+
+.h1-layout {
+    margin: 25px 0 30px;
+
+    font-size: 38px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.h1-span-layout {
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-layout {
+    padding: 33px;
+}
+
+.ul-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.li-layout {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 93px;
+}
+
+.image-layout {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.h2-layout {
+    margin: 25px 0;
+    font-weight: 400;
+    color: #808080;
+}
+
+.p-layout {
+    font-size: 19px;
+    line-height: 1.45;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: 1px solid #000000;
+    padding: 20px 80px;
+    font: inherit;
+}
+
+@media screen and (min-width: 641px) {
+    .ul-layout {
+        flex-wrap: wrap;
+    }
+
+    .li-layout {
+        flex-basis: calc((100% - 2 * 33px) / 2);
+    }
+
+    .li-flexbox:not(:last-child) {
+        margin-bottom: 0;
+    }
 }
