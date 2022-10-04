@@ -15,6 +15,10 @@ html {
     box-sizing: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 header, 
 .h1-flexbox {
     margin-bottom: 30px;
@@ -33,7 +37,6 @@ header,
 
     padding: 10px;
 
-    list-style-type: none;
     border: 5px solid #576F72;
     border-radius: 5px;
 
