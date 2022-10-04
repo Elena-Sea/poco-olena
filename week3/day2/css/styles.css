@@ -19,6 +19,13 @@ ul {
     list-style-type: none;
 }
 
+
+
+
+
+/* Styles for Exercise 1 in columns.html  */
+
+
 header, 
 .h1-flexbox {
     margin-bottom: 30px;
@@ -90,3 +97,15 @@ header,
     }
 }
 
+
+
+/* Styles for Exercise 2 in layout.html  */
+
+.body-layout {
+    background-color: #DFDFDE;
+    padding: 50px;
+}
+
+.main-layout {
+    background-color: #ffffff;
+}
