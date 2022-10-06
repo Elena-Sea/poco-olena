@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>w3 Ex"Form"</title>
+    </head>
+
+    <body class="body-form">
+        <header  class="header-form">
+            <nav>
+                <a href="./index.html">Back to Day Tasks Menu</a>
+            </nav>
+        </header>
+        <main class="main-form">
+
+            <form class="form-form">
+                <h2 class="h2-form">Profil</h2>
+                <p class="p-form">
+                    Hier können Sie Ihre Adress-Angaben einsehen und anpassen.
+                </p>
+                <fieldset class="fieldset-form">
+                    <legend class="legend-form">Persönliche Daten</legend>
+            
+                    <label class="label-form" for="Ttext">Titel</label>
+                    <input type="text" name="Ttext" id="Ttext" value="Dr. hc" required><br>
+            
+                    <label  class="label-form" for="name">Vorname</label>
+                    <input type="text" name="name" id="name" value="Peter" required><br>
+            
+                    <label  class="label-form" for="surname">Nachname</label>
+                    <input type="text" name="surname" id="surname" value="Muster" required>
+            
+                    <div>
+                        <span>Geschlecht</span>
+                        <label  class="label-form" for="female">W</label>
+                        <input type="radio" name="f-m" id="female">
+                        <label  class="label-form" for="male">M</label>
+                        <input type="radio" name="f-m" id="male" checked>
+                    </div>
+            
+                    <label  class="label-form" for="female2">Geschlecht</label>
+                    <label  class="label-form" for="female2">W</label>
+                    <input type="radio" name="f-m2" id="female2" checked>
+                    <label  class="label-form" for="male2">M</label>
+                    <input type="radio" name="f-m2" id="male2">
+                    <div>
+                        <span>Sprache</span>
+                        <label  class="label-form" for="sprache-de">DE</label>
+                        <input type="radio" name="sprache" id="sprache-de" checked>
+                        <label  class="label-form" for="sprache-fr">FR</label>
+                        <input type="radio" name="sprache" id="sprache-fr">
+                        <label  class="label-form" for="sprache-it">IT</label>
+                        <input type="radio" name="sprache" id="sprache-it">
+                    </div>
+                </fieldset>
+            
+                <fieldset class="fieldset-form">
+                    <legend class="legend-form">Kontaktdaten</legend>
+                    <label  class="label-form" for="telefon">Telefon</label>
+                    <input type="tel" name="telefon" id="telefon" required><br>
+            
+                    <label  class="label-form" for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="main-number">Hauptnumber</label>
+                    <input type="tel" name="main-number" id="main-number" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="fax">Fax</label>
+                    <input type="tel" name="fax" id="fax" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="mail-1">Mail 1</label>
+                    <input type="email" name="mail-1" id="mail-1" required><br>
+            
+                    <label  class="label-form" for="mail-2">Mail 2</label>
+                    <input type="email" name="mail-2" id="mail-2" placeholder="optional">
+                </fieldset>
+            
+                <fieldset class="fieldset-form">
+                    <legend class="legend-form">Adressdaten</legend>
+                    <label  class="label-form" for="firma">Firma</label>
+                    <input type="text" name="firma" id="firma" required><br>
+            
+                    <label  class="label-form" for="zusatz-firma">Zusatz Firma</label>
+                    <input type="text" name="zusatz-firma" id="zusatz-firma" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="home-page">Homepage</label>
+                    <input type="url" name="home-page" id="home-page" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="address">Adress / Haus Nr</label>
+                    <input type="text" name="address" id="address" value="Musterstrasse" required>
+                    <input type="number" value="33" required><br>
+            
+                    <label  class="label-form" for="zusatz-address">Zusatz Adress</label>
+                    <input type="text" name="zusatz-address" id="zusatz-address" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="postbox">Postfach</label>
+                    <input type="text" name="postbox" id="postbox" placeholder="optional"><br>
+            
+                    <label  class="label-form" for="ort">PLZ / Ort</label>
+                    <input type="number" name="ort" id="ort" value="8800" required>
+                    <input type="text" value="Musterstadt" required><br>
+            
+                    <label  class="label-form" for="kanton">Kanton / Land</label>
+                    <input type="text" name="kanton" id="kanton" value="ZH" required>
+                    <input type="text" value="Musterstadt" required>
+                </fieldset>
+                <input type="submit" value="Speichern">
+            </form>
+        </main>
+    </body>
+
+</html>
