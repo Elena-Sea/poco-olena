@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>w3 Ex"Slider"</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html">Back to Day Tasks Menu</a>
+        </nav>
+    </header>
+   <main class="main-js">
+        
+        <form>
+           <fieldset class="fieldset-hello">
+                <legend>Task 1</legend>
+                <label class="label-js" for="name">Input your name</label>
+                <input class="input-js" type="text" name="name" id="name">
+                <p class="output-hello">Hello, <span  class="output-span"></span>! Have a nice day!</p>
+            </fieldset> 
+            <fieldset class="fieldset-string">
+                <legend>Task 2</legend>
+                <label class="label-js" for="string">Input any word</label>
+                <input class="input-string" type="text" name="string" id="string">
+                <p class="output-string">You have typed:<span class="display-string">Nothing</span>. And the number of characters is:<span class="display-length">0</span></p>
+            </fieldset>
+            <fieldset class="fieldset-author">
+                <legend>Task 3</legend>
+                <div>
+                    <label class="label-js" for="author">Input the author name</label>
+                    <input class="input-author" type="text" name="author" id="author">
+                    <label class="label-js" for="quote">Input the author name</label>
+                    <input class="input-quote" type="text" name="quote" id="quote">
+                    <button class="author-btn" type="button">Add the quote</button>
+                </div>
+                <p class="output-author"><span class="display-author">Author</span> says, "<span class="display-quote"> ... </span>".</p>
+            </fieldset>
+            <fieldset class="fieldset-story">
+                <legend>Task 4</legend>
+                <div class="div-story-input">
+                    <label class="label-js" for="story-noun">Input any NOUN</label>
+                    <input class="input-story noun" type="text" name="story-noun" id="story-noun">
+                    <label class="label-js" for="story-verb">Input any VERB</label>
+                    <input class="input-story verb" type="text" name="story-verb" id="story-verb">
+                    <label class="label-js" for="story-adverb">Input any ADVERB</label>
+                    <input class="input-story adverb" type="text" name="story-adverb" id="story-adverb">
+                    <label class="label-js" for="story-adjective">Input any ADJECTIVE</label>
+                    <input class="input-story adjective" type="text" name="story-adjective" id="story-adjective">
+                    <button class="story-btn" type="button">Make story</button>
+                </div>
+                <div class="div-story">
+                    <h3 class="div-story-title">“The Tale of Johnny Town-Mouse”</h3>
+                    <p class="output-story"><span class="display-story"></span></p>
+                </div>
+            </fieldset>
+            <label for="bill"></label>
+            <input class="input-js"  type="text" name="bill" id="bill">
+            <label for="tip"></label>
+            <input class="input-js"  type="number" name="tip" id="tip">
+        </form>
+   </main>
+<script src="./js/calc.js"></script>
+</body>
+
+</html>
