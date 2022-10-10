@@ -435,12 +435,18 @@ background-color: rgb(229, 225, 225);
 .fieldset-hello,
 .fieldset-string,
 .fieldset-author,
-.fieldset-story {
+.fieldset-story,
+.fieldset-password,
+.tip-calculator {
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
 
     font-size: 20px;
+}
+
+.legend-for-calc{
+font-style: italic;
 }
 
 .fieldset-author {
@@ -496,4 +502,8 @@ margin-right: 10px;
 
 .div-story-title {
     margin-bottom: 20px;
+}
+
+.password-btn {
+    margin-right: 20px;
 }

@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>w3 Ex"Slider"</title>
+    <title>w3 Ex Friday</title>
 </head>
 
 <body>
@@ -25,19 +25,19 @@
         
         <form>
            <fieldset class="fieldset-hello">
-                <legend>Task 1</legend>
+                <legend class="legend-for-calc">Task 1 - To replace the name in greeting</legend>
                 <label class="label-js" for="name">Input your name</label>
                 <input class="input-js" type="text" name="name" id="name">
                 <p class="output-hello">Hello, <span  class="output-span"></span>! Have a nice day!</p>
             </fieldset> 
             <fieldset class="fieldset-string">
-                <legend>Task 2</legend>
+                <legend class="legend-for-calc">Task 2 - To count the number of characters in input</legend>
                 <label class="label-js" for="string">Input any word</label>
                 <input class="input-string" type="text" name="string" id="string">
                 <p class="output-string">You have typed:<span class="display-string">Nothing</span>. And the number of characters is:<span class="display-length">0</span></p>
             </fieldset>
             <fieldset class="fieldset-author">
-                <legend>Task 3</legend>
+                <legend class="legend-for-calc">Task 3 - To display the Author name and his/her quote</legend>
                 <div>
                     <label class="label-js" for="author">Input the author name</label>
                     <input class="input-author" type="text" name="author" id="author">
@@ -48,7 +48,7 @@
                 <p class="output-author"><span class="display-author">Author</span> says, "<span class="display-quote"> ... </span>".</p>
             </fieldset>
             <fieldset class="fieldset-story">
-                <legend>Task 4</legend>
+                <legend class="legend-for-calc">Task 4 - To make a funny story with input words</legend>
                 <div class="div-story-input">
                     <label class="label-js" for="story-noun">Input any NOUN</label>
                     <input class="input-story noun" type="text" name="story-noun" id="story-noun">
@@ -62,13 +62,21 @@
                 </div>
                 <div class="div-story">
                     <h3 class="div-story-title">“The Tale of Johnny Town-Mouse”</h3>
-                    <p class="output-story"><span class="display-story"></span></p>
+                    <p class="output-story"><span class="display-story">Your story will be hear ...</span></p>
                 </div>
             </fieldset>
-            <label for="bill"></label>
-            <input class="input-js"  type="text" name="bill" id="bill">
-            <label for="tip"></label>
-            <input class="input-js"  type="number" name="tip" id="tip">
+            <fieldset class="fieldset-password">
+                <legend class="legend-for-calc">Task 5 - To generate password</legend> 
+                    <button class="password-btn" type="button">Generate password</button>
+                <p class="output-password"></p>
+            </fieldset>
+            <!-- <fieldset class="tip-calculator">
+                <legend class="legend-for-calc">Separate task - Tip calculator</legend>
+                <label for="bill"></label>
+                <input class="input-js" type="text" name="bill" id="bill">
+                <label for="tip"></label>
+                <input class="input-js" type="number" name="tip" id="tip">
+            </fieldset> -->
         </form>
    </main>
 <script src="./js/calc.js"></script>
