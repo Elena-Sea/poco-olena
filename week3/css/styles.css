@@ -437,12 +437,20 @@ background-color: rgb(229, 225, 225);
 .fieldset-author,
 .fieldset-story,
 .fieldset-password,
-.tip-calculator {
+.tip-calculator,
+.fieldset-age,
+.fieldset-fortune {
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
 
     font-size: 20px;
+}
+
+.fieldset-age,
+.fieldset-fortune {
+    align-items: center;
+    justify-content: space-around;
 }
 
 .legend-for-calc{
@@ -459,7 +467,9 @@ margin-right: 10px;
 
 .input-js,
 .input-string,
-.input-author {
+.input-author, 
+.input-year-birth,
+.input-year-future {
     margin-bottom: 10px;
     margin-right: 30px;
 }
@@ -506,4 +516,19 @@ margin-right: 10px;
 
 .password-btn {
     margin-right: 20px;
+}
+
+.input-password {
+    margin-right: 20px;
+}
+
+.display-age, 
+.display-year-future {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.birth,
+.future {
+    display: flex;
+    flex-direction: column;
 }

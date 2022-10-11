@@ -67,8 +67,43 @@
             </fieldset>
             <fieldset class="fieldset-password">
                 <legend class="legend-for-calc">Task 5 - To generate password</legend> 
-                    <button class="password-btn" type="button">Generate password</button>
+                <label class="label-js" for="password">Input number of characters in password</label>
+                <input class="input-password" type="number" name="password" id="password" value="8" min="8" max="15">
+                <button class="password-btn" type="button">Generate password</button>
                 <p class="output-password"></p>
+            </fieldset>
+            <!-- <fieldset class="fieldset-password">
+                <legend class="legend-for-calc">Task 6 - To validate a phone number</legend>
+                <label class="label-js" for="password">Input phone number</label>
+                <input class="input-number" type="tel" name="password" id="password" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <button class="password-btn" type="button">Generate password</button>
+                <p class="output-password"></p>
+            </fieldset> -->
+            <fieldset class="fieldset-age">
+                <legend class="legend-for-calc">Task 7 - Age calculator</legend>
+                <div class="birth">
+                    <label for="year-birth">Year of birth</label>
+                    <input class="input-year-birth" type="number" name="year-birth" id="year-birth" min="1970" max="2000">
+                    <label for="month-birth">Month of birth</label>
+                    <input class="input-month-birth" type="number" name="month-birth" id="month-birth" min="1" max="12">
+                </div>
+                
+                <div class="future">
+                    <label for="year-future">Year in future</label>
+                    <input class="input-year-future" type="number" name="year-future" id="year-future" min="2022" max="2100">
+                </div>
+                
+                <button class="age-btn" type="button">Calculate age</button>
+                <p class="output-age">I will be either<span class="display-age">NN</span>in<span class="display-year-future">YYYY</span</p>
+            </fieldset>
+            <fieldset class="fieldset-fortune">
+                <legend class="legend-for-calc">Task 8 - Fortune teller</legend>
+                
+                <div class="div-fortune">
+                    <h3 class="div-fortune-title">“Do you want to know your nearest fortune? Press the button!”</h3>
+                    <p class="output-fortune"><span class="display-fortune">Okey, so today afternoon you . . .</span></p>
+                </div>
+                <button class="fortune-btn" type="button">Your fortune</button>
             </fieldset>
             <!-- <fieldset class="tip-calculator">
                 <legend class="legend-for-calc">Separate task - Tip calculator</legend>
