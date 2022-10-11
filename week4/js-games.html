@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>w3 Ex Friday</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html">Back to Day Tasks Menu</a>
+        </nav>
+    </header>
+   <main class="main-js">
+        
+        <form>
+            <fieldset class="fieldset-age">
+                <legend class="legend-for-calc">Task 7 - Age calculator</legend>
+                <div class="birth">
+                    <label for="year-birth">Year of birth</label>
+                    <input class="input-year-birth" type="number" name="year-birth" id="year-birth" min="1970" max="2000">
+                    <label for="month-birth">Month of birth</label>
+                    <input class="input-month-birth" type="number" name="month-birth" id="month-birth" min="1" max="12">
+                </div>
+                
+                <div class="future">
+                    <label for="year-future">Year in future</label>
+                    <input class="input-year-future" type="number" name="year-future" id="year-future" min="2022" max="2100">
+                </div>
+                
+                <button class="age-btn" type="button">Calculate age</button>
+                <p class="output-age">I will be either<span class="display-age">NN</span>in<span class="display-year-future">YYYY</span</p>
+            </fieldset>
+            <fieldset class="fieldset-fortune">
+                <legend class="legend-for-calc">Task 8 - Fortune teller</legend>
+                
+                <div class="div-fortune">
+                    <h3 class="div-fortune-title">“Do you want to know your nearest fortune? Press the button!”</h3>
+                    <p class="output-fortune"><span class="display-fortune">Okey, so today afternoon you . . .</span></p>
+                </div>
+                <button class="fortune-btn" type="button">Your fortune</button>
+            </fieldset>
+            <!-- <fieldset class="tip-calculator">
+                <legend class="legend-for-calc">Separate task - Tip calculator</legend>
+                <label for="bill"></label>
+                <input class="input-js" type="text" name="bill" id="bill">
+                <label for="tip"></label>
+                <input class="input-js" type="number" name="tip" id="tip">
+            </fieldset> -->
+        </form>
+   </main>
+<script src="./js/calc.js"></script>
+</body>
+
+</html>
