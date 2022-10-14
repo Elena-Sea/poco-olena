@@ -18,7 +18,7 @@
 
     <header>
         <nav>
-            <a href="./index.html">Back to Day Tasks Menu</a>
+            <a href="./index.html">Back to Week4 Tasks Menu</a>
         </nav>
     </header>
    <main class="main-js">
@@ -57,9 +57,37 @@
                 <label for="tip"></label>
                 <input class="input-js" type="number" name="tip" id="tip">
             </fieldset> -->
+
+            <fieldset class="fieldset-mystery">
+                <legend class="legend-for-calc">Task 9 - Mystery number</legend>
+                <div class="mystery">
+                    <label for="mystery-number">Try to guess mystery number</label>
+                    <input class="input-mystery" type="text" name="mystery-number" id="mystery-number">
+                </div>
+                <button class="mystery-btn" type="button">Check</button>
+                <p class="mystery-result"></p>
+            </fieldset>
+
+            <fieldset class="fieldset-mystery">
+                <legend class="legend-for-calc">Task 10 - odd/even</legend>
+                <button class="odd-even-btn" type="button">Odd/Even</button>
+                <p class="odd-even-result"></p>
+            </fieldset>
+
+            <fieldset class="fieldset-week">
+                <legend class="legend-for-calc">Task 10 - Week days translation</legend>
+                <div class="week">
+                    <label for="week-day">Enter the name of any day of the week</label>
+                    <input class="input-day" type="text" name="week-day" id="week-day">
+                </div>
+            
+                <button class="transl-btn" type="button">Translate</button>
+                <p class="day-name">In german it is :<span class="day-name-transl">  . . .
+                    </span></p>
+            </fieldset>
         </form>
    </main>
-<script src="./js/calc.js"></script>
+<script src="./js/js-games.js"></script>
 </body>
 
 </html>
