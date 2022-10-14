@@ -282,7 +282,11 @@ const ref = {
 	teamGallery: document.querySelector(".team-gallery"),
 	selectorMinions: document.querySelector("#minions"),
 	selectorCountry: document.querySelector("#country"),
-   	selectorGender: document.querySelector("#gender"),
+	selectorGender: document.querySelector("#gender"),
+	selectorGenderIcon: document.querySelector('.range__icon'),
+	selectorGenderMan: document.querySelector('.range__icon--man'),
+	selectorGenderBoth: document.querySelector('.range__icon--both'),
+	selectorGenderWoman: document.querySelector('.range__icon--woman'),
 }
 
 function markupTeamGallery(minions) { 
@@ -294,22 +298,30 @@ function markupTeamGallery(minions) {
                         <div class="minion">
                             <h3 class="minion__name">${minion.name.toUpperCase()}</h3>
                             <p class="minion__role">${minion.role}</p>
-							<p class="function">${minion.function}</p>
+							<p class="minion__function">${minion.function}</p>
                             <ul class="minion__links">
                                 <li class="minion-link">
+                                    <a href="${minion.mail}" class="minion-link__link">
+                                    <svg class="minion-link__icon" width="32" height="32">
+                                        <use href="./images/sprite-minions.svg#icon-github"></use>
+                                    </svg>
+                                    </a>
+                                </li>
+								<li class="minion-link">
                                     <a href="${minion.linkedin}" class="minion-link__link">
                                     <svg class="minion-link__icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                        <use href="./images/sprite-minions.svg#icon-linkedin"></use>
                                     </svg>
                                     </a>
                                 </li>
                                 <li class="minion-link">
                                     <a href="${minion.mail}" class="minion-link__link">
                                     <svg class="minion-link__icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                        <use href="./images/sprite-minions.svg#icon-envelop"></use>
                                     </svg>
                                     </a>
                                 </li>
+								
                             </ul>
                         </div>
                     </div>
@@ -322,7 +334,6 @@ markupTeamGallery(minions);
 
 
 function showMinions() { 
-
 	if (ref.selectorMinions.value === "talented") {
 		let seniorMinions = [];
 		minions.forEach(function(minion) { 
@@ -414,7 +425,7 @@ ref.selectorCountry.addEventListener("change", showMinionsByCountry, false);
 
 function showMinionsByGender() { 
 
-	if (ref.selectorGender.value === "0") {
+	if (ref.selectorGender.value === "100") {
 		let femaleMinions = [];
 		minions.forEach(function(minion) { 
 			if (minion.gender === 'female') { 
@@ -422,7 +433,8 @@ function showMinionsByGender() {
 			}
 		});
 		markupTeamGallery(femaleMinions);
-	} else if (ref.selectorGender.value === "100") {
+
+	} else if (ref.selectorGender.value === "0") {
 		let maleMinions = [];
 		minions.forEach(function(minion) { 
 			if (minion.gender === 'male') { 
@@ -430,9 +442,10 @@ function showMinionsByGender() {
 			}
 		});
 		markupTeamGallery(maleMinions);
-	} else { 
+
+	} else {
 		markupTeamGallery(minions);
-	}
+	} 
 }
 
 ref.selectorGender.addEventListener("change", showMinionsByGender, false);

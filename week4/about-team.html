@@ -42,14 +42,17 @@
                         </select>
                     </li>
                     <li class="filter">
-                        <div>
-                            <input class="filter__button filter__button--range" type="range" id="gender" name="gender" list="tickmarks">
-
-                            <datalist id="tickmarks">
-                                <option value="0" label="F"></option>
-                                <option value="50" label="Both"></option>
-                                <option value="100" label="M"></option>
-                            </datalist>
+                        <div class="range-container">
+                            <svg class="range__icon range__icon--man" width="25" height="25">
+                                <use href="./images/sprite-minions.svg#icon-man"></use>
+                            </svg>
+                            <svg class="range__icon range__icon--both" width="25" height="25"">
+                                <use href="./images/sprite-minions.svg#icon-man-woman"></use>
+                            </svg>
+                            <svg class="range__icon range__icon--woman" width="25" height="25">
+                                <use href="./images/sprite-minions.svg#icon-woman"></use>
+                            </svg>
+                            <input class="filter__button--range" type="range" id="gender" name="gender" min="0" max="100" value="50">
                         </div>
                     </li>
                     <li class="filter">

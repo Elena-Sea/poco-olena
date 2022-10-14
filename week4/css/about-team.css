@@ -193,14 +193,99 @@ main {
     }
 }
 
-datalist {
-    display: flex;
-    justify-content: space-around;
-    writing-mode: horisontal-tb;
-    width: 150px;
-    color: #A87A51;
-    font-weight: 700;
+/* The slider itself */
+.filter__button--range {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    margin-bottom: 20px;
+
+    width: 50%;
+    /* Full-width */
+    height: 10px;
+    border-radius: 5px;
+    /* Specified height */
+    background: #FCE029;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    /* opacity: 0.7; */
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
 }
+
+/* Mouse-over effects */
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.filter__button--range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 32px;
+    /* Set a specific slider handle width */
+    height: 32px;
+    /* Slider handle height */
+    background-image: url('../images/wink.svg');
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+
+
+    background-color: #FCE029;
+        background-image: url('../images/wink.svg');
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+    
+        border-radius: 50%;
+        border-color: #A87A51;
+}
+
+
+
+
+.filter__button--range::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #A87A51;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.range-container {
+    position: relative;
+    padding-top: 30px;
+    width: 250px;
+}
+
+.range__icon {
+    position: absolute;
+    top: 0;
+    left: 20%;
+
+    fill: #A87A51;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.range__icon--woman {
+    left: 70%;
+}
+
+.range__icon--both {
+    left: 45%;
+}
+
+.range__icon--changed {
+    fill: #0A75BC;
+}
+
+
 
 .minion-card__thumb {
 margin-bottom: 30px;
@@ -222,6 +307,12 @@ margin-bottom: 30px;
     transform: scale(1.1);
 }
 
+.minion__function,
+.minion__role,
+.minion__name {
+    margin-bottom: 5px;
+}
+
 .minion {
     color: #0A75BC;
 }
@@ -231,6 +322,8 @@ margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    padding: 20px;
 }
 
 .minion__link {
@@ -245,7 +338,6 @@ margin-bottom: 30px;
     align-items: center;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
 
     color: #A87A51;
 
@@ -253,10 +345,9 @@ margin-bottom: 30px;
 
    
 }
-.social-link__link:hover,
-.social-link__link:focus {
-    background-color: #FCE029;
-    color: #A87A51;
+.minion-link__link:hover,
+.minion-link__link:focus {
+    color: #0A75BC;
 }
 
 .minion-link__icon {
