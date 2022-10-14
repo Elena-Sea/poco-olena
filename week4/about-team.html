@@ -34,13 +34,35 @@
                 <h2 class="container__title container__title--team">Meet our team</h2>
                 <ul class="filter-buttons">
                     <li class="filter">
-                        <button type="button" class="filter__button">All members</button>
+                        
+                        <select class="filter__button" name="minions" id="minions">
+                            <option value="minions">All minions</option>
+                            <option value="talented">Senior minions</option>
+                            <option value="senior">Talented minions</option>
+                        </select>
                     </li>
                     <li class="filter">
-                        <button type="button" class="filter__button">Gender</button>
+                        <div>
+                            <input class="filter__button filter__button--range" type="range" id="gender" name="gender" list="tickmarks">
+
+                            <datalist id="tickmarks">
+                                <option value="0" label="F"></option>
+                                <option value="50" label="Both"></option>
+                                <option value="100" label="M"></option>
+                            </datalist>
+                        </div>
                     </li>
                     <li class="filter">
-                        <button type="button" class="filter__button">Country</button>
+                        <select class="filter__button" name="country" id="country">
+                            <option value="all">All countries</option>
+                            <option value="afghanistan">Afghanistan</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="india">India</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="syria">Syria</option>
+                            <option value="turkey">Turkey</option>
+                            <option value="ukraine">Ukraine</option>
+                        </select>
                     </li>
                   
                 </ul>

@@ -1,5 +1,7 @@
 'use strict';
 
+// list of minions (can be in separate file, I'll do it later) 
+
 const minions = [
   {
     name: 'Abdul Fatah Shieryar',
@@ -7,6 +9,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Afghanistan',
+	gender: 'male',
 	mail: 'AbdulFatah.Shieryar@powercoders.org',
   },
   {
@@ -15,6 +19,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Ali.Gocmen@powercoders.org',
   },
 {
@@ -23,6 +29,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Indonesia',
+	gender: 'female',
 	mail: 'Ariani.NiLuh@powercoders.org',
   },
 {
@@ -31,6 +39,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Syria',
+	gender: 'male',
 	mail: 'Arwa.Alhussein@powercoders.org',
   },
 {
@@ -39,6 +49,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Baris.Durucan@powercoders.org',
   },
 {
@@ -47,6 +59,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Afghanistan',
+	gender: 'male',
 	mail: 'Bilal.Sulaimankhil@powercoders.org',
   },
 {
@@ -55,6 +69,8 @@ const minions = [
 	role: 'Senior minion',
 	function: 'Company Relations Romandie & PR',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Switzerland',
+	gender: 'female',
 	mail: 'christina.graeni@powercoders.org',
   },
 {
@@ -63,6 +79,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Emin.Yilmaz@powercoders.org',
   },
 {
@@ -71,6 +89,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Enes.Bora@powercoders.org',
 	},
   {
@@ -79,6 +99,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Fatih.Yavuz@powercoders.org',
 	},
   {
@@ -87,6 +109,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Hasan.Danaci@powercoders.org',
 	},
   {
@@ -95,6 +119,8 @@ const minions = [
 	role: 'Senior minion',
 	function: 'Training & Talent Development',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Switzerland',
+	gender: 'female',
 	mail: 'helene.portier@powercoders.org',
 	},
   {
@@ -103,6 +129,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Ismet.Bakay@powercoders.org',
 	},
   {
@@ -111,6 +139,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'India',
+	gender: 'female',
 	mail: 'Jyothi.Jogin@powercoders.org',
 	},
   {
@@ -119,6 +149,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'female',
 	mail: 'Tuba.TurkcanKaraca@powercoders.org',
 	},
   {
@@ -127,6 +159,8 @@ const minions = [
 	role: 'Senior minion',
 	function: 'Program Manager',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Switzerland',
+	gender: 'male',
 	mail: 'linus.murbach@powercoders.org',
 	},
   {
@@ -135,6 +169,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Murat.Guldibi@powercoders.org',
 	},
   {
@@ -143,6 +179,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Oguz.Yildiz@powercoders.org',
 	},
   {
@@ -151,6 +189,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Ukraine',
+	gender: 'female',
 	mail: 'Olena.Smetiuk@powercoders.org',
 	},
   {
@@ -159,6 +199,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Kurdistan',
+	gender: 'male',
 	mail: 'Sadettin.Karatas@powercoders.org',
 	},
   {
@@ -167,6 +209,8 @@ const minions = [
 	role: 'Senior minion',
 	function: 'Teaching assistant',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Switzerland',
+	gender: 'male',
 	mail: 'seb.degraffenried@powercoders.org',
 	},
   {
@@ -175,6 +219,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'female',
 	mail: 'Senay.Atli@powercoders.org',
 	},
   {
@@ -183,6 +229,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Serkan.Tasgin@powercoders.org',
 	},
   {
@@ -191,6 +239,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'female',
 	mail: 'Sevim.Gokturk@powercoders.org',
 	},
   {
@@ -199,6 +249,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Switzerland',
+	gender: 'male',
 	mail: 'Shamil.Idrisov@powercoders.org',
 	},
   {
@@ -207,6 +259,8 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Ukraine',
+	gender: 'female',
 	mail: 'Yuliia.Kuts@powercoders.org',
 	},
   {
@@ -215,20 +269,24 @@ const minions = [
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
+	country: 'Turkey',
+	gender: 'male',
 	mail: 'Yusuf.Ilhan@powercoders.org',
   },
 ];
 
-// , , 
 
-// , , , , , , , , , , , , , , , , , , , stacy.voncranach@powercoders.org, tarek.kariish@powercoders.org, powercoders@tristanlabelle.com, yaara.segal@powercoders.org, , 
+// main code 
 
 const ref = {
-  teamGallery: document.querySelector('.team-gallery'),
-   
+	teamGallery: document.querySelector(".team-gallery"),
+	selectorMinions: document.querySelector("#minions"),
+	selectorCountry: document.querySelector("#country"),
+   	selectorGender: document.querySelector("#gender"),
 }
 
 function markupTeamGallery(minions) { 
+	ref.teamGallery.innerHTML = "";
     ref.teamGallery.insertAdjacentHTML('beforeend', minions.map(minion => { 
         return `<li class="minion-card">
                     <div class="minion-card__thumb">
@@ -238,17 +296,17 @@ function markupTeamGallery(minions) {
                             <p class="minion__role">${minion.role}</p>
 							<p class="function">${minion.function}</p>
                             <ul class="minion__links">
-                                <li class="minion__linkedin">
-                                    <a href="#" class="minion__linkedin-link">
-                                    <svg class="minion__linkedin-icon" width="32" height="32">
-                                        <use href="#icon-linkedin"></use>
+                                <li class="minion-link">
+                                    <a href="${minion.linkedin}" class="minion-link__link">
+                                    <svg class="minion-link__icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg>
                                     </a>
                                 </li>
-                                <li class="minion__mail">
-                                    <a href="${minion.mail}" class="minion__mail-icon">
-                                    <svg class="minion__mail-icon" width="32" height="32">
-                                        <use href="#icon-mail"></use>
+                                <li class="minion-link">
+                                    <a href="${minion.mail}" class="minion-link__link">
+                                    <svg class="minion-link__icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                     </a>
                                 </li>
@@ -261,13 +319,121 @@ function markupTeamGallery(minions) {
 }
 
 markupTeamGallery(minions);
-// const displayAge = () => { 
-   
-//     ref.outputAge.textContent = ref.inputMonthBirth.value <= 6 ? ref.inputFutureYear.value - ref.inputYearBirth.value - 1 : ref.inputFutureYear.value - ref.inputYearBirth.value;
-    
-//     ref.outputYearFuture.textContent = ref.inputFutureYear.value;
-// }
 
-// ref.btnAge.addEventListener("click", displayAge);
 
+function showMinions() { 
+
+	if (ref.selectorMinions.value === "talented") {
+		let seniorMinions = [];
+		minions.forEach(function(minion) { 
+			if (minion.role === 'Senior minion') { 
+				seniorMinions.push(minion);
+			}
+		});
+		markupTeamGallery(seniorMinions);
+	} else if (ref.selectorMinions.value === "senior") {
+		let talentedMinions = [];
+		minions.forEach(function(minion) { 
+			if (minion.role === 'Talented minion') { 
+				talentedMinions.push(minion);
+			}
+		});
+		markupTeamGallery(talentedMinions);
+	} else { 
+		markupTeamGallery(minions);
+	}
+}
+
+ref.selectorMinions.addEventListener("change", showMinions, false);
+
+
+function showMinionsByCountry() { 
+
+	if (ref.selectorCountry.value === "afghanistan") {
+		let minionsFromA = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Afghanistan') { 
+				minionsFromA.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromA);
+	} else if (ref.selectorCountry.value === "indonesia") {
+		let minionsFromIns = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Indonesia') { 
+				minionsFromIns.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromIns);
+	} else if (ref.selectorCountry.value === "india") {
+		let minionsFromInd = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'India') { 
+				minionsFromInd.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromInd);
+	} else if (ref.selectorCountry.value === "switzerland") {
+		let minionsFromSw = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Switzerland') { 
+				minionsFromSw.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromSw);
+	} else if (ref.selectorCountry.value === "syria") {
+		let minionsFromSr = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Syria') { 
+				minionsFromSr.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromSr);
+	} else if (ref.selectorCountry.value === "turkey") {
+		let minionsFromT = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Turkey') { 
+				minionsFromT.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromT);
+	} else if (ref.selectorCountry.value === "ukraine") {
+		let minionsFromU = [];
+		minions.forEach(function(minion) { 
+			if (minion.country === 'Ukraine') { 
+				minionsFromU.push(minion);
+			}
+		});
+		markupTeamGallery(minionsFromU);
+	} else { 
+			markupTeamGallery(minions);
+	}
+}
+
+ref.selectorCountry.addEventListener("change", showMinionsByCountry, false);
+
+function showMinionsByGender() { 
+
+	if (ref.selectorGender.value === "0") {
+		let femaleMinions = [];
+		minions.forEach(function(minion) { 
+			if (minion.gender === 'female') { 
+				femaleMinions.push(minion);
+			}
+		});
+		markupTeamGallery(femaleMinions);
+	} else if (ref.selectorGender.value === "100") {
+		let maleMinions = [];
+		minions.forEach(function(minion) { 
+			if (minion.gender === 'male') { 
+				maleMinions.push(minion);
+			}
+		});
+		markupTeamGallery(maleMinions);
+	} else { 
+		markupTeamGallery(minions);
+	}
+}
+
+ref.selectorGender.addEventListener("change", showMinionsByGender, false);
 

@@ -121,6 +121,12 @@ main {
     background-color: #FCE029;
 }
 
+.know-more:hover,
+.know-more:focus {
+    color: #FCE029;
+    background-color: #0A75BC;
+}
+
 @media screen and (min-width: 768px) {
     .know-more {
         font-size: 20px;
@@ -148,23 +154,57 @@ main {
 } */
 
 .filter-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 50px;
 
 }
 
+@media screen and (min-width: 768px) {
+    .filter-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
 .filter__button {
     padding: 5px;
+    margin-bottom: 10px;
 
-    color: #FCE029;
-    background-color: #A87A51;
+    font-weight: 700;
+    
+    color: #A87A51;
+    background-color: #FCE029;
 
-    border: 1px solid #A87A51;
+    border: 1px solid #FCE029;
     border-radius: 10px;
 }
 
+.filter__button:hover,
+.filter__button:focus {
+    color: #FCE029;
+    background-color: #A87A51;
+}
+
+@media screen and (min-width: 768px) {
+    .team-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+datalist {
+    display: flex;
+    justify-content: space-around;
+    writing-mode: horisontal-tb;
+    width: 150px;
+    color: #A87A51;
+    font-weight: 700;
+}
+
+.minion-card__thumb {
+margin-bottom: 30px;
+}
 
 .minion-card__image {
     /* border: 3px solid #FCE029; */
@@ -184,4 +224,41 @@ main {
 
 .minion {
     color: #0A75BC;
+}
+
+
+.minion__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.minion__link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.minion-link__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    color: #A87A51;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+}
+.social-link__link:hover,
+.social-link__link:focus {
+    background-color: #FCE029;
+    color: #A87A51;
+}
+
+.minion-link__icon {
+    fill: currentColor;
 }
