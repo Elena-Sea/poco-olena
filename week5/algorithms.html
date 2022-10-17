@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>w3 Ex Friday</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html">Back to Week5 Tasks Menu</a>
+        </nav>
+    </header>
+   <main class="main-js">
+        
+        <form>
+            <fieldset class="fieldset-age">
+                <legend class="legend-for-calc">Task 7 - Age calculator</legend>
+                <div class="birth">
+                    <label for="year-birth">Year of birth</label>
+                    <input class="input-year-birth" type="number" name="year-birth" id="year-birth" min="1970" max="2000">
+                    <label for="month-birth">Month of birth</label>
+                    <input class="input-month-birth" type="number" name="month-birth" id="month-birth" min="1" max="12">
+                </div>
+                
+                <div class="future">
+                    <label for="year-future">Year in future</label>
+                    <input class="input-year-future" type="number" name="year-future" id="year-future" min="2022" max="2100">
+                </div>
+                
+                <button class="age-btn" type="button">Calculate age</button>
+                <p class="output-age">I will be either<span class="display-age">NN</span>in<span class="display-year-future">YYYY</span</p>
+            </fieldset>
+            
+
+            <fieldset class="fieldset-mystery">
+                <legend class="legend-for-calc">Task 9 - Mystery number</legend>
+                <div class="mystery">
+                    <label for="mystery-number">Try to guess mystery number</label>
+                    <input class="input-mystery" type="text" name="mystery-number" id="mystery-number">
+                </div>
+                <button class="mystery-btn" type="button">Check</button>
+                <p class="mystery-result"></p>
+            </fieldset>
+
+            <fieldset class="fieldset-mystery">
+                <legend class="legend-for-calc">Task 10 - odd/even</legend>
+                <button class="odd-even-btn" type="button">Odd/Even</button>
+                <p class="odd-even-result"></p>
+            </fieldset>
+
+            <fieldset class="fieldset-week">
+                <legend class="legend-for-calc">Task 10 - Week days translation</legend>
+                <div class="week">
+                    <label for="week-day">Enter the name of any day of the week</label>
+                    <input class="input-day" type="text" name="week-day" id="week-day">
+                </div>
+            
+                <button class="transl-btn" type="button">Translate</button>
+                <p class="day-name">In german it is :<span class="day-name-transl">  . . .
+                    </span></p>
+            </fieldset>
+        </form>
+   </main>
+<script src="./js/js-games.js"></script>
+</body>
+
+</html>
