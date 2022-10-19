@@ -24,55 +24,47 @@
    <main class="main-js">
         
         <form>
-            <fieldset class="fieldset-age">
-                <legend class="legend-for-calc">Task 7 - Age calculator</legend>
-                <div class="birth">
-                    <label for="year-birth">Year of birth</label>
-                    <input class="input-year-birth" type="number" name="year-birth" id="year-birth" min="1970" max="2000">
-                    <label for="month-birth">Month of birth</label>
-                    <input class="input-month-birth" type="number" name="month-birth" id="month-birth" min="1" max="12">
+            <fieldset class="fieldset-bigger-number">
+                <legend class="legend-for-bignum">Task 1 - Bigger number</legend>
+                <div class="bignum">
+                    <label for="first-number">Input first number</label>
+                    <input class="input-first" type="text" name="first-number" id="first-number">
+                    <label for="second-number">Input second number</label>
+                    <input class="input-second" type="text" name="second-number" id="second-number">
+                </div>
+                <button class="bignum-btn" type="button">Check</button>
+                <p class="bignum-result"></p>
+            </fieldset>
+
+            <fieldset class="fieldset-hello">
+                <legend class="legend-for-hello">Task 2 - "Hello world" translation</legend>
+                <label for="lang">Choose the language to translate</label>
+                <select class="filter" name="lang" id="lang">
+                    <option value="en">English</option>
+                    <option value="de">German</option>
+                    <option value="fr">Franch</option>
+                    <option value="uk">Ukrainian</option>
+                    <option value="ru">Russian</option>
+                </select>
+                <p class="hello">Hello world!</p>
+            </fieldset>
+
+            <fieldset class="fieldset-retirement">
+                <legend class="legend-for-retirement">Task 7 - Retirement calculator</legend>
+                <div class="date-input">
+                    <label for="birth-date">Date of birth</label>
+                    <input class="input-birth-date" type="date" name="birth-date" id="birth-date" min="1950" max="2004">
+                    <label for="work-start">Date of work start</label>
+                    <input class="input-work-start" type="date" name="work-start" id="work-start" min="1965" max="2004">
+                    <button class="retirement-btn" type="button">When is the retirement?</button>
                 </div>
                 
-                <div class="future">
-                    <label for="year-future">Year in future</label>
-                    <input class="input-year-future" type="number" name="year-future" id="year-future" min="2022" max="2100">
-                </div>
-                
-                <button class="age-btn" type="button">Calculate age</button>
-                <p class="output-age">I will be either<span class="display-age">NN</span>in<span class="display-year-future">YYYY</span</p>
-            </fieldset>
-            
-
-            <fieldset class="fieldset-mystery">
-                <legend class="legend-for-calc">Task 9 - Mystery number</legend>
-                <div class="mystery">
-                    <label for="mystery-number">Try to guess mystery number</label>
-                    <input class="input-mystery" type="text" name="mystery-number" id="mystery-number">
-                </div>
-                <button class="mystery-btn" type="button">Check</button>
-                <p class="mystery-result"></p>
+                <p class="retirement-info">You can retired in <span class="display-ret-year"> YYYY </span>at the age of <span class="display-ret-age"> . . .  </span> so you still have to work <span class="display-left-years"> . . .  </span> years. </p>
             </fieldset>
 
-            <fieldset class="fieldset-mystery">
-                <legend class="legend-for-calc">Task 10 - odd/even</legend>
-                <button class="odd-even-btn" type="button">Odd/Even</button>
-                <p class="odd-even-result"></p>
-            </fieldset>
-
-            <fieldset class="fieldset-week">
-                <legend class="legend-for-calc">Task 10 - Week days translation</legend>
-                <div class="week">
-                    <label for="week-day">Enter the name of any day of the week</label>
-                    <input class="input-day" type="text" name="week-day" id="week-day">
-                </div>
-            
-                <button class="transl-btn" type="button">Translate</button>
-                <p class="day-name">In german it is :<span class="day-name-transl">  . . .
-                    </span></p>
-            </fieldset>
         </form>
    </main>
-<script src="./js/js-games.js"></script>
+<script src="./js/algorithms.js"></script>
 </body>
 
 </html>

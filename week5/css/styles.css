@@ -38,11 +38,11 @@ main {
 
 
 
-.fieldset-week,
-.fieldset-age,
-.fieldset-fortune,
-.fieldset-mystery {
+.fieldset-bigger-number,
+.fieldset-hello,
+.fieldset-retirement {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     
@@ -52,7 +52,8 @@ main {
     font-size: 20px;
 }
 
-.legend-for-calc{
+.legend-for-bignum,
+.legend-for-hello{
 font-style: italic;
 }
 
@@ -72,29 +73,14 @@ margin-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.birth,
-.future,
-.week,
-.mystery {
+
+.bignum,
+.date-input {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.div-fortune {
-    width: 800px;
-}
-
-.fortune-btn {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f1640c;
-    transform: rotate(0);
-
-    transition: transform 2000ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-}
-
-.fortune-btn:focus {
-    transform: rotate(1440deg);
+.bignum-result {
+    color: tomato;
 }

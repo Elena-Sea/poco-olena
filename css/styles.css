@@ -7,3 +7,11 @@ body {
     background-color: #FFFFFF;
 
 }
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #757575;
+}

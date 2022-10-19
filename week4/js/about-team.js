@@ -283,7 +283,7 @@ const ref = {
 	selectorMinions: document.querySelector("#minions"),
 	selectorCountry: document.querySelector("#country"),
 	selectorGender: document.querySelector("#gender"),
-	selectorGenderIcon: document.querySelector('.range__icon'),
+	selectorGenderIcon: document.querySelectorAll('.range__icon'),
 	selectorGenderMan: document.querySelector('.range__icon--man'),
 	selectorGenderBoth: document.querySelector('.range__icon--both'),
 	selectorGenderWoman: document.querySelector('.range__icon--woman'),
@@ -424,8 +424,12 @@ function showMinionsByCountry() {
 ref.selectorCountry.addEventListener("change", showMinionsByCountry, false);
 
 function showMinionsByGender() { 
-
+	
+	ref.selectorGenderIcon[0].classList.remove('range__icon--changed');
+	ref.selectorGenderIcon[1].classList.remove('range__icon--changed');
+	ref.selectorGenderIcon[2].classList.remove('range__icon--changed');
 	if (ref.selectorGender.value === "100") {
+		ref.selectorGenderIcon[2].classList.add('range__icon--changed');
 		let femaleMinions = [];
 		minions.forEach(function(minion) { 
 			if (minion.gender === 'female') { 
@@ -435,7 +439,7 @@ function showMinionsByGender() {
 		markupTeamGallery(femaleMinions);
 
 	} else if (ref.selectorGender.value === "0") {
-		let maleMinions = [];
+ref.selectorGenderIcon[0].classList.add('range__icon--changed');		let maleMinions = [];
 		minions.forEach(function(minion) { 
 			if (minion.gender === 'male') { 
 				maleMinions.push(minion);
@@ -444,6 +448,7 @@ function showMinionsByGender() {
 		markupTeamGallery(maleMinions);
 
 	} else {
+		ref.selectorGenderIcon[1].classList.add('range__icon--changed');
 		markupTeamGallery(minions);
 	} 
 }
