@@ -5,6 +5,10 @@ const CHEAT_REVEAL_ALL = false;
 const ROWS_COUNT = 10;
 const COLS_COUNT = 10;
 
+const BOMBS_COUNT = 10;
+
+
+
 var defeat = false;
 var victory = false;
 
@@ -15,19 +19,25 @@ function Cell()
     this.isBomb = false;
     this.hasBeenFlagged = false;
 }
-
 // Initialize cells
 var cells = Array(ROWS_COUNT);
+
 for (var row = 0; row < ROWS_COUNT; row++) {
     cells[row] = Array(COLS_COUNT);
+
     for (var col = 0; col < COLS_COUNT; col++) {
         cells[row][col] = new Cell();
     }
 }
 
+
+
 //
 // TODO: Task 1 - add some bombs at fixed positions.
-//
+
+// cells[0][2].isBomb = true;
+
+
 
 //
 // TODO: Task 2 - Comment out the code of task 1. Instead of adding bombs in fixed places, add 10 of them in random places.
@@ -36,26 +46,73 @@ for (var row = 0; row < ROWS_COUNT; row++) {
 //
 
 
+let bombsNumber = BOMBS_COUNT;
+let bomRowI;
+let bomColI;
+
+for (let i = 0; i < bombsNumber; i += 1) {
+  
+    bomRowI = Math.floor(Math.random() * 10);
+    bomColI = Math.floor(Math.random() * 10);
+
+    // cells[bomRowI][bomColI].isBomb == true ? bombsNumber += 1 : cells[bomRowI][bomColI].isBomb = true;
+
+    if (cells[bomRowI][bomColI].isBomb == true) {
+        bombsNumber += 1;
+        // console.log(bombsNumber);
+    } else { 
+        cells[bomRowI][bomColI].isBomb = true;
+        // console.log(bombsNumber);
+    }
+
+}
+
 // Once the game has been initialized, we "render" it.
 render();
-
 
 //
 // Game functions definitions
 //
-
+let numDisCells = 0;
 function discoverCell(row, col) {
     //
     // TODO: Task 5 - Reveal cells when clicked.
     //
+    
 
-    //
+    cells[row][col].discovered = true;
+    numDisCells += 1;
+    console.log(numDisCells);
     // TODO: Task 6 - Discover neighbor cells recursively, as long as there are no adjacent bombs to the current cell.
     //
+    let maxRowNum = ROWS_COUNT - 1;
+    let maxColNum = COLS_COUNT - 1;
+    
+    let bombNum = countAdjacentBombs(row, col);
+            console.log(bombNum);
+
+    if (bombNum == 0) { 
+        if (row > 0 && row < maxRowNum && col > 0 && col < maxColNum) {
+            for (let i = row - 1; i <= row + 1; i += 1) {
+                for (let j = col - 1; j <= col + 1; j += 1) {
+                    cells[i][j].discovered = true;
+                        numDisCells += 1;
+
+                }
+            }
+        }
+        
+    }
+
 
     //
     // TODO: Task 8 - Implement defeat. If the player "discovers" a bomb (clicks on it without holding shift), set the variable defeat to true.
     //
+    if (cells[row][col].isBomb == true) { 
+        defeat = true;
+        
+    }
+    return numDisCells;
 }
 
 function flagCell(row, col) {
@@ -63,6 +120,15 @@ function flagCell(row, col) {
     // TODO: Task 7 - Implement flags. Flags allow the player to mark cells that they think contain a bomb.
     //                When clicking a cell and holding shift, function flagCell() will be called for you.
     //
+
+    
+    if (cells[row][col].hasBeenFlagged == true) {
+        cells[row][col].discovered = false;
+        cells[row][col].hasBeenFlagged = false;
+    } else { 
+        cells[row][col].hasBeenFlagged = true;
+    }
+    
 }
 
 // This function is called once for each cell when rendering the game. The row and col of the current cell is
@@ -70,9 +136,111 @@ function flagCell(row, col) {
 function countAdjacentBombs(row, col) {
     //
     // TODO: Task 4 - Adjacent bombs are bombs in cells touching our cell (also diagonally). Implement this function
-    //                so that it returns the count of adjacent cells with bombs in them. 
-    //
-    return 1;
+    //                so that it returns the count of adjacent cells with bombs in them.
+    
+   
+    let maxRowNum = ROWS_COUNT - 1;
+    let maxColNum = COLS_COUNT - 1;
+    let bombCounter = 0;
+
+
+    if (row > 0 && row < maxRowNum && col > 0 && col < maxColNum) {
+        // console.log(row, col);
+        for (let i = row - 1; i <= row + 1; i += 1) {
+            for (let j = col - 1; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (row == 0 && col == 0) {
+        for (let i = row; i <= row + 1; i += 1) {
+            for (let j = col; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (row == maxRowNum && col == 0) {
+        for (let i = row - 1; i <= row; i += 1) {
+            for (let j = col; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (row == maxRowNum && col == maxColNum) {
+        for (let i = row - 1; i <= row; i += 1) {
+            for (let j = col - 1; j <= col; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (row == 0 && col == maxColNum) {
+        for (let i = row; i <= row + 1; i += 1) {
+            for (let j = col - 1; j <= col; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+    
+    if (row == 0 && col > 0  && col < maxColNum) {
+
+        for (let i = row; i <= row + 1; i += 1) {
+            for (let j = col - 1; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (row == maxRowNum && col > 0  && col < maxColNum) {
+
+        for (let i = row - 1; i <= row; i += 1) {
+            for (let j = col - 1; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (col == 0 && row > 0 && row < maxRowNum) {
+
+        for (let i = row - 1; i <= row + 1; i += 1) {
+            for (let j = col; j <= col + 1; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    if (col == maxColNum && row > 0 && row < maxRowNum) {
+
+        for (let i = row - 1; i <= row + 1; i += 1) {
+            for (let j = col - 1; j <= col; j += 1) {
+                if (cells[i][j].isBomb == true) {
+                    bombCounter += 1;
+                }
+            }
+        }
+    }
+
+    
+    return bombCounter;
 }
 
 function getBombsCount() {
@@ -83,6 +251,10 @@ function getBombsCount() {
 }
 
 function getClearedCells() {
+
+    // let clearedCells = numDisCells;
+    // clearedCells += discoverCell(row, col);
+   
     //
     // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
     //
@@ -101,6 +273,8 @@ function checkForVictory() {
     // TODO: Task 10 - Implement victory. If the player has revealed as many cells as they must (every cell that isn't a
     //                 bomb), set variable victory to true.
     //
+
+  
     return 0;
 }
 
@@ -133,6 +307,7 @@ function render() {
                     cellText = "💣";
                 } else {
                     var adjBombs = countAdjacentBombs(row, col);
+                    
                     if (adjBombs > 0) { 
                         cellText = adjBombs.toString();
                         if (adjBombs == 1) {
@@ -188,3 +363,4 @@ function onCellClicked(row, col, event) {
     checkForVictory();
     render();
 }
+
