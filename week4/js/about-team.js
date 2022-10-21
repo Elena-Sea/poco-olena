@@ -455,3 +455,11 @@ ref.selectorGenderIcon[0].classList.add('range__icon--changed');		let maleMinion
 
 ref.selectorGender.addEventListener("change", showMinionsByGender, false);
 
+
+
+ 
+	let cardTarget = document.querySelector('.minion-card');
+	let cardTargetById = document.getElementById('.minion-card');
+
+    console.log(cardTarget);
+    // console.log(cellTarget.closest('.minion-card'));

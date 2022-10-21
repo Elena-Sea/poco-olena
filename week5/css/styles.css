@@ -31,7 +31,9 @@ main {
     padding: 10px;
 }
 
-
+#demo {
+    margin-top: 100px;
+}
 
 /* Styles for tip-calc.html */
 
@@ -83,4 +85,34 @@ margin-right: 10px;
 
 .bignum-result {
     color: tomato;
+}
+
+
+.exercise-1,
+.exercise-book-list {
+   display: flex;
+   flex-direction: column;
+    margin-top: 100px;
+    background-color: bisque;
+}
+
+.title-for-ex1,
+.book-list-title,
+.paragraph-for-ex1,
+.book-para
+ {
+    margin-bottom: 50px;
+}
+
+.btn-for-ex1 {
+    width: 200px;
+}
+
+.book-list {
+    background-color: pink;
+}
+
+.book-info {
+    margin-bottom: 50px;
+    
 }
