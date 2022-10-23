@@ -114,5 +114,13 @@ margin-right: 10px;
 
 .book-info {
     margin-bottom: 50px;
-    
+
+}
+
+.book-ckeck {
+    color: blue;
+}
+
+.book-ckeck-icon {
+    fill: currentColor;
 }

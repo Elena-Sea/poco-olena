@@ -161,9 +161,30 @@ let bookList = document.createElement('ul');
 bookList.classList.add('book-list');
 booksContainer.appendChild(bookList);
 
+const label = document.querySelector('label');
+
 for (let book of books) {
     bookList.innerHTML += `<li class="book-info">
     <p>The title of the book, written by ${book.author}, is ${book.title}</p>
-    <a href="${book.linkToBuy}" target="_blank"><img src="${book.image}" alt="The image of the book ${book.title}" width="100"/></a>
+    <a href="${book.linkToBuy}" target="_blank">
+    <img src="${book.image}" alt="The image of the book ${book.title}" width="100"/></a>
+    <input type="checkbox" id="read-book" name="read-book" value="unread" aria-checked="false" onclick="changeCheckbox()">
+    <label for="read-book">Not read jet</label>
     </li>`;
+
+    // function changeCheckbox(event) {
+    //     label.innerHTML = 'Already read';
+    //     let checkbox = document.getElementById('read-book');
+    //     switch(checkbox.getAttribute('aria-checked')) {
+    //         case "true":
+    //             label.innerHTML = 'Already read';
+    //             break;
+    //         case "false":
+    //             checkbox.setAttribute('aria-checked', "true");
+    //             break;
+    //     }
+    // }
 }
+
+
+
