@@ -171,7 +171,7 @@ main {
     margin-bottom: 10px;
 
     font-weight: 700;
-    
+
     color: #A87A51;
     background-color: #FCE029;
 
@@ -235,13 +235,13 @@ main {
 
 
     background-color: #FCE029;
-        background-image: url('../images/wink.svg');
-        background-size: contain;
-        background-origin: border-box;
-        background-repeat: no-repeat;
-    
-        border-radius: 50%;
-        border-color: #A87A51;
+    background-image: url('../images/wink.svg');
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+    border-color: #A87A51;
 }
 
 
@@ -288,7 +288,7 @@ main {
 
 
 .minion-card__thumb {
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .minion-card__image {
@@ -338,14 +338,15 @@ margin-bottom: 30px;
     align-items: center;
     width: 30px;
     height: 30px;
- 
-    
+
+
     color: #A87A51;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   
+
 }
+
 .minion-link__link:hover,
 .minion-link__link:focus {
     color: #0A75BC;

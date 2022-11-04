@@ -188,3 +188,8 @@ for (let book of books) {
 
 
 
+let x = 8;
+do {
+    console.log('Hello');
+    x += 1;
+} while (x<10)

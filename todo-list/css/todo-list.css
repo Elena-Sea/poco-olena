@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: #3e3e3e;
+}
+
+.section {
+    padding: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.save-btn,
+.new-btn,
+.status-btn {
+    width: 140px;
+    margin-bottom: 50px;
+}
+.label {
+    margin-bottom: 20px;
+}
