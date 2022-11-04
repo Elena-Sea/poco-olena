@@ -225,7 +225,7 @@ const minions = [
 	},
   {
     name: 'Serkan Tasgin',
-    image: './images/Serkan-opt.jpeg',
+    image: './images/Serkan-opt.jpg',
 	role: 'Talented minion',
 	function: 'Training, training, training...',
 	linkedin: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo',
