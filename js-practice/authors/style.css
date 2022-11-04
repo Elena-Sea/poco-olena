@@ -3,9 +3,7 @@ html {
     font-size: 0.625em;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
@@ -112,7 +110,7 @@ main a:hover span::after {
     position: absolute;
 }
 
-main ul {
+main ul { 
     display: grid;
     gap: 1rem;
 }
@@ -172,38 +170,38 @@ footer {
 }
 
 .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0); 
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
     position: absolute;
-    white-space: nowrap;
+    white-space: nowrap; 
     width: 1px;
 }
 
 /* min-width 751px, medium screens */
 @media only screen and (min-width: 46.938em) {
-    main ul {
-        grid-template-areas:
-            'img1 img2'
-            'img3 img3'
-            'img3 img3'
-            'img4 img4'
-            'img4 img4'
-            'img5 img6'
-            'img7 img8'
-            'img9 img9'
-            'img9 img9'
-            'img10 img10'
-            'img10 img10'
-            'img11 img12';
+	main ul {
+        grid-template-areas: 
+        'img1 img2'
+        'img3 img3'
+        'img3 img3'
+        'img4 img4'
+        'img4 img4'
+        'img5 img6'
+        'img7 img8'
+        'img9 img9'
+        'img9 img9'
+        'img10 img10'
+        'img10 img10'
+        'img11 img12';
     }
 }
 
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-    main ul {
-        grid-template-areas:
+	main ul {
+        grid-template-areas: 
             'img1 img2 img2 img3 img3'
             'img4 img2 img2 img3 img3'
             'img5 img5 img6 img6 img7'
