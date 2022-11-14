@@ -1,0 +1,127 @@
+/* Minion Color Scheme palette has 6 colors which are Raisin Black (#231F20),
+Ocean Boat Blue (#0A75BC),
+Banana Yellow (#FCE029),
+Café Au Lait (#A87A51),
+White (#FFFFFF) and Spanish Gray (#949699). */
+
+
+
+:root {
+    --primary-background-color: #A87A51;
+    --secondary-background-color: #FCE029;
+    --buttons-text-color: #0A75BC;
+    --timer-text-color: #FCE029;
+    
+    --primary-effect-color: #FCE029;
+    --secondary-effect-color: #FCE029;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--secondary-text-color);
+}
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+main {
+    padding: 50px;
+}
+
+.intervals {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 500px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 200px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+
+    color: var(--timer-text-color);
+}
+
+.value {
+    font-size: 170px;
+
+}
+
+.value.colon {
+    font-size: 100px;
+}
+
+.sec-intervals,
+.offered-intervals {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    padding: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--buttons-text-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-effect-color);
+    box-shadow: 0 0 5px 1px var(--primary-effect-color);
+}
+
+button:hover,
+button:focus {
+    color: var(--timer-text-color);
+    background-color: var(--buttons-text-color);
+    border-color: var(--buttons-text-color);
+    box-shadow: 0 0 5px 1px var(--buttons-text-color);
+}
+
+.timer-end {
+    display: none;
+}
+
+.timer-end.vissible {
+    display: block;
+}

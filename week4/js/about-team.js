@@ -463,3 +463,23 @@ ref.selectorGender.addEventListener("change", showMinionsByGender, false);
 
     console.log(cardTarget);
     // console.log(cellTarget.closest('.minion-card'));
+
+
+
+
+
+
+function setEndTime({ minutes, seconds }) { 
+    endMinutes.textContent = minutes;
+    endSeconds.textContent = seconds;
+}
+
+function onRunTimer({ minutes, seconds }) { 
+    btnFiveSec.disabled = true;
+    startTime = Date.now() + 1000;
+    
+    endTime = startTime + 5000;
+    setEndTime(convertMs(endTime));
+    // getEndTime(e);
+    timerId = setInterval(runTimer, 1000);
+}

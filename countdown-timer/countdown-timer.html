@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="countdown-timer.css">
+        <title>Timer</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../../index.html">Back to poco-olena </a>
+               
+            </nav>
+        </header>
+        <main>
+            
+
+            
+            <div class="timer">
+                <p class="field">
+                    <span class="value" data-minutes>00</span>
+                    <span class="value colon">&colon;</span>
+                    <span class="value" data-seconds>00</span>
+                </p>
+                <p class="timer-end"> Ends at: <span class="value-end" end-minutes>00</span>
+                <span class="value-end colon">&colon;</span>
+                <span class="value-end" end-seconds>00</span></p>
+            </div>
+
+            <div class="intervals">
+                <div class="sec-intervals">
+                    <button type="button" value="5000" data-5-sec>5 SECS</button>
+                    <button type="button" value="20000" data-20-sec>20 SECS</button>
+                    <button type="button" value="30000" data-30-sec>30 SECS</button>
+                </div>
+                <div class="offered-intervals">
+                    <button type="button"  value="5" data-work>WORK 5</button>
+                    <button type="button" value="15" data-quick>QUICK 15</button>
+                    <button type="button" data-snack>SNACK 20</button>
+                    <button type="button" data-lunch>LUNCH BREAK</button>
+                </div>
+                
+                
+                
+                <!-- <input type="time" id="datetime" />
+                <button type="button" data-start>Start</button> -->
+            </div>
+        </main>
+        
+        <script src="./countdown-timer.js"></script>
+    </body>
+
+</html>
